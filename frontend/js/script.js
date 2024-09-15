@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageBox = document.getElementById('message');
     const compressionLevel = document.getElementById('compression-level');
     const clearBtn = document.querySelector('.clear-btn');
-    const apiURL = 'https://img-compressor.vercel.app/api/upload';
 
     let files = [];
     let originalFilenames = [];
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('level', compressionLevel.value);
 
         try {
-            const response = await fetch(apiURL, {
+            const response = await fetch('http://127.0.0.1:5000/upload', {
                 method: 'POST',
                 body: formData,
             });
