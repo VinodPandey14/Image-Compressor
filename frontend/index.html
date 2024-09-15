@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="icon" type="image/svg+xml" href="/frontend/assests/icons/minimize.png" />
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-image"></i> Image Compressor</h1>
+            <p>Optimize and compress your images with ease!</p>
+        </div> 
+    </header>
+    <div class="container">
+        <div class="content">
+            <p>Select images and choose the compression level:</p>
+            <div class="upload-box">
+                <label for="file-upload" class="custom-file-upload">
+                    <i class="fas fa-upload"></i> Upload Files
+                </label>
+                <input id="file-upload" type="file" multiple>
+                <button class="clear-btn"><i class="fas fa-trash"></i> Clear Queue</button>
+            </div>
+            <div class="compression-level">
+                <label>Compression Level:</label>
+                <select id="compression-level">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button id="compress-btn"><i class="fas fa-compress-alt"></i> Compress</button>
+            <div id="output"></div>
+            <div class="download-box">
+                <button id="download-btn" class="download-btn" disabled><i class="fas fa-download"></i> Download All</button>
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <i class="fas fa-check-circle"></i>
+                <h3>Perfect Quality</h3>
+                <p>We intelligently apply compression to retain image quality while drastically reducing image size.</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-trophy"></i>
+                <h3>Best Compression</h3>
+                <p>Compress your images by up to 80% or more by applying lossy compression and other optimizations.</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-bolt"></i>
+                <h3>Easy To Use</h3>
+                <p>Simply upload your images and watch our tool do its magic. Even large images are compressed within seconds.</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-images"></i>
+                <h3>Image Formats</h3>
+                <p>Our image compressor can compress JPEG and PNG images. You can compress up to 20 images at a time.</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Privacy Guaranteed</h3>
+                <p>We care about file privacy. Images are uploaded via a secure connection and deleted instantly.</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-heart"></i>
+                <h3>It's Free</h3>
+                <p>It's for free! There is no software to install, no registrations, or watermarks.</p>
+            </div>
+        </div>
+        <div class="footer-box">
+            <p>&copy; 2024 Image Compressor | Built with 💖 by Vinod Pandey</p>
+                <h2>Follow Me</h2>
+                <div class="social-icons">
+                    <a href="https://github.com/VinodPandey14/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/vinod-pandey14/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:itsvinod14@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/frontend/js/script.js"></script>
+</body>
+</html>
