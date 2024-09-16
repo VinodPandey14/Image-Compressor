@@ -14,7 +14,7 @@ A lightweight web application designed to compress images, reducing their file s
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python (Flask)
 - **Image Compression**: Pillow for image processing
-- **Deployment**: Vercel for frontend and serverless backend
+- **Deployment**: Netlify for frontend and Render for serverless backend
 
 ## Usage
 
